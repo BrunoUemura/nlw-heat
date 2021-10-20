@@ -1,7 +1,5 @@
 # NLW HEAT
 
-## Stage 1
-
 Node.js App
 
 - [x] Create project
@@ -22,7 +20,3 @@ Node.js App
 - Express
 - Prisma
 - Websockets
-
-## Stage 2
-
-ReactJS App
