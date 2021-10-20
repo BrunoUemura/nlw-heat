@@ -21,3 +21,4 @@ Node.js App
 - TypeScript
 - Express
 - Prisma
+- Websockets
