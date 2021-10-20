@@ -1,0 +1,10 @@
+GET http://localhost:4000/github
+
+###
+
+POST http://localhost:4000/authenticate
+Content-Type: application/json
+
+{
+    "code": "8a2b5673e53284b78602"
+}
