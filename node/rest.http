@@ -18,3 +18,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiO
 {
     "message": "I am super exited for DoWhile"
 }
+
+###
+
+GET http://localhost:4000/messages/last3
+
+###
+
+GET http://localhost:4000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJCcnVubyBIaWRla2kgVWVtdXJhIiwiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS82NDUwOTYyMj92PTQiLCJpZCI6ImRiNWU0ZjZkLTk4MWQtNDBmZC1iZjA1LWYzZTZhNmVkZTk5OSJ9LCJpYXQiOjE2MzQ3MDgzMjcsImV4cCI6MTYzNDc5NDcyNywic3ViIjoiZGI1ZTRmNmQtOTgxZC00MGZkLWJmMDUtZjNlNmE2ZWRlOTk5In0.15SZ7rs5S8y3EL7aVeIkWojQSdRwGay93T_yTVP5lJc
