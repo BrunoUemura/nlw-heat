@@ -1,10 +1,10 @@
-generator client {
-  provider = "prisma-client-js"
-}
-
 datasource db {
   provider = "sqlite"
   url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
 }
 
 model User {
@@ -23,7 +23,8 @@ model Message {
   text       String
   created_at DateTime @default(now())
 
-  user    User   @relation(fields: [user_id], references: [id])
+  user User @relation(fields: [user_id], references: [id])
+
   user_id String
   @@map("messages")
 }

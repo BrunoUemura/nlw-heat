@@ -3,13 +3,13 @@ import prismaClient from "../prisma";
 import { sign } from "jsonwebtoken";
 
 /**
- * Receive code(string)
- * Retrieve the access_token from github
- * Retrieve user info from github
- * Check if user exists in DB
- * YES ===> Generate a token
- * NO  ===> Create user and generate token
- * Return the token with user info
+ * Receber code(string)
+ * Recuperar o access_token no github
+ * Recuperar infos do user no github
+ * Verificar se o usuario existe no DB
+ * ---- SIM = Gera um token
+ * ---- NAO = Cria no DB, gera um token
+ * Retornar o token com as infos do user
  */
 
 interface IAccessTokenResponse {
@@ -26,6 +26,7 @@ interface IUserResponse {
 class AuthenticateUserService {
   async execute(code: string) {
     const url = "https://github.com/login/oauth/access_token";
+
     const { data: accessTokenResponse } =
       await axios.post<IAccessTokenResponse>(url, null, {
         params: {
@@ -70,7 +71,7 @@ class AuthenticateUserService {
       {
         user: {
           name: user.name,
-          avatar_url: user.avatar_url,
+          avatar_ur: user.avatar_url,
           id: user.id,
         },
       },
